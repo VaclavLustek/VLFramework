@@ -9,22 +9,12 @@
 Pod::Spec.new do |s|
   s.name             = "VLFramework"
   s.version          = "0.1.0"
-  s.summary          = "A short description of VLFramework."
+  s.summary          = "Custom framework to simplify iOS programming. Contains UI, convenience and network classes."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/VLFramework"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/VaclavLustek/VLFramework"
   s.license          = 'MIT'
-  s.author           = { "Václav Luštěk" => "Ydus@AppsDevTeam.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/VLFramework.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Václav Luštěk" => "lustek@email.cz" }
+  s.source           = { :git => "https://github.com/VaclavLustek/VLFramework.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

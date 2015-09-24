@@ -1,16 +1,15 @@
 //
-//  ViewController.swift
-//  VLFramework
+//  UIColor.swift
+//  Pods
 //
 //  Created by Václav Luštěk.
-//  Copyright © 2015 CocoaPods. All rights reserved.
+//
 //
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-// MARK: - Imports
+// MARK: - Import
 
 import UIKit
-import VLFramework
 
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -24,8 +23,8 @@ import VLFramework
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // MARK: - Class
 
-class ViewController: UIViewController {
-
+extension UIColor {
+ 
     
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Properties
@@ -34,27 +33,35 @@ class ViewController: UIViewController {
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Init
     
-    
-    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-    // MARK: - View lifecycle
-    
-    override func viewDidLoad() {
+    public class func fromHSBA(hue: Int, _ saturation: Int, _ brightness: Int, _ alpha: Int) -> UIColor {
         
-        super.viewDidLoad()
-        self.setup()
+        let hueFloat: CGFloat = CGFloat(hue) / 360.0
+        let saturationFloat: CGFloat = CGFloat(saturation) / 100.0
+        let brightnessFloat: CGFloat = CGFloat(brightness) / 100.0
+        let alphaFloat: CGFloat = CGFloat(alpha) / 100.0
+        
+        let color: UIColor = UIColor(hue: hueFloat, saturation: saturationFloat, brightness: brightnessFloat, alpha: alphaFloat)
+        
+        return color
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-        super.viewWillAppear(animated)
-    }
-    
-    
-    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-    // MARK: - Setup
-    
-    func setup() {
-        
-        self.view.backgroundColor = UIColor.fromHSBA(10, 90, 80, 100)
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+PODS:
+  - VLFramework (0.1.0)
+
+DEPENDENCIES:
+  - VLFramework (from `../`)
+
+EXTERNAL SOURCES:
+  VLFramework:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VLFramework: 1d8ff73b8886cd07f1287a2fa0c8c4b8b1ff0e1b
+
+COCOAPODS: 0.37.2

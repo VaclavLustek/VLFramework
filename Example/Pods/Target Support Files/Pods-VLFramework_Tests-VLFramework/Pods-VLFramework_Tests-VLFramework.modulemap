@@ -1,0 +1,6 @@
+framework module VLFramework {
+  umbrella header "Pods-VLFramework_Tests-VLFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
