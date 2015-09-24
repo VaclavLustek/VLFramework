@@ -13,16 +13,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-VLFramework is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "VLFramework"
-```
-
 ## Author
 
-Václav Luštěk, Ydus@AppsDevTeam.com
+Václav Luštěk, lustek@email.cz
 
 ## License
 
