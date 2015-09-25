@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VLFramework: 1d8ff73b8886cd07f1287a2fa0c8c4b8b1ff0e1b
+  VLFramework: 1ee756ac50c1a84beda694102bbeeff88a5ac224
 
 COCOAPODS: 0.37.2

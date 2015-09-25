@@ -1,15 +1,14 @@
 {
   "name": "VLFramework",
   "version": "0.1.0",
-  "summary": "A short description of VLFramework.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/VLFramework",
+  "summary": "Custom framework to simplify iOS programming. Contains UI, convenience and network classes.",
+  "homepage": "https://github.com/VaclavLustek/VLFramework",
   "license": "MIT",
   "authors": {
-    "Václav Luštěk": "Ydus@AppsDevTeam.com"
+    "Václav Luštěk": "lustek@email.cz"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/VLFramework.git",
+    "git": "https://github.com/VaclavLustek/VLFramework.git",
     "tag": "0.1.0"
   },
   "platforms": {
