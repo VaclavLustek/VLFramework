@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/VaclavLustek/VLFramework"
   s.license          = 'MIT'
   s.author           = { "Václav Luštěk" => "lustek@email.cz" }
-  s.source           = { :git => "https://github.com/VaclavLustek/VLFramework.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/VaclavLustek/VLFramework.git", :branch => "master", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
