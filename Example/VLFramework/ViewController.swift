@@ -11,6 +11,8 @@
 
 import UIKit
 import VLFramework
+import AFNetworking
+import Bolts
 
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -60,12 +62,13 @@ class ViewController: VLAbstractTableVC {
         self.isSectioned = false
         self.cellArray = []
         
+        
         for i in 1...10 {
             
             let config: VLCellConfig = VLCellConfig()
             
             var text: String = String(format: "%d", i)
-            let random: Int = Int(arc4random() % 40)
+            let random: Int = Int(arc4random() % 40) + 2
             for _ in 1...random {
                 
                 text = text.stringByAppendingString(" xx")

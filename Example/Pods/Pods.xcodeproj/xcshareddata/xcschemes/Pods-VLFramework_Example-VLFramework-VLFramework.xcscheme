@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A69915FE540E1921331AC666"
+               BlueprintIdentifier = "65B094462BEB42D5C1162A28"
                BuildableName = "VLFramework.bundle"
                BlueprintName = "Pods-VLFramework_Example-VLFramework-VLFramework"
                ReferencedContainer = "container:Pods.xcodeproj">

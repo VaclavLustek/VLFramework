@@ -1,5 +1,38 @@
 PODS:
-  - VLFramework (0.1.0)
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.3.0):
+    - Bolts/AppLinks (= 1.3.0)
+    - Bolts/Tasks (= 1.3.0)
+  - Bolts/AppLinks (1.3.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.3.0)
+  - VLFramework (0.1.1):
+    - AFNetworkActivityLogger
+    - AFNetworking
+    - Bolts
 
 DEPENDENCIES:
   - VLFramework (from `../`)
@@ -9,6 +42,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VLFramework: 1ee756ac50c1a84beda694102bbeeff88a5ac224
+  AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  VLFramework: 39317c36a384ff97d015356156d1eee444321631
 
 COCOAPODS: 0.37.2

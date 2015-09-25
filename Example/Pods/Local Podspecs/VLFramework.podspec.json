@@ -1,6 +1,6 @@
 {
   "name": "VLFramework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Custom framework to simplify iOS programming. Contains UI, convenience and network classes.",
   "homepage": "https://github.com/VaclavLustek/VLFramework",
   "license": "MIT",
@@ -9,7 +9,8 @@
   },
   "source": {
     "git": "https://github.com/VaclavLustek/VLFramework.git",
-    "tag": "0.1.0"
+    "branch": "master",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -19,6 +20,17 @@
   "resource_bundles": {
     "VLFramework": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "AFNetworkActivityLogger": [
+
+    ],
+    "Bolts": [
+
     ]
   }
 }
