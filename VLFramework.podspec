@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VLFramework"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Custom framework to simplify iOS programming. Contains UI, convenience and network classes."
 
   s.homepage         = "https://github.com/VaclavLustek/VLFramework"

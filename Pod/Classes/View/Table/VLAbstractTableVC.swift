@@ -29,7 +29,7 @@ public class VLAbstractTableVC: UIViewController {
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Properties
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet public weak var tableView: UITableView!
     
     public var isSectioned: Bool = false
     public var sectionArray: Array<Array<AnyObject>> = []
