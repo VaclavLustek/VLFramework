@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_VLFramework_Example_AFNetworkActivityLogger : NSObject
-@end
-@implementation PodsDummy_Pods_VLFramework_Example_AFNetworkActivityLogger
-@end

@@ -1,6 +1,0 @@
-framework module Bolts {
-  umbrella header "Pods-VLFramework_Tests-Bolts-umbrella.h"
-
-  export *
-  module * { export * }
-}

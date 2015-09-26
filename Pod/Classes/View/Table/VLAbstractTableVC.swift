@@ -32,8 +32,8 @@ public class VLAbstractTableVC: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     public var isSectioned: Bool = false
-    public var sectionArray: Array<Array<VLCellConfig>> = []
-    public var cellArray: Array<VLCellConfig> = []
+    public var sectionArray: Array<Array<AnyObject>> = []
+    public var cellArray: Array<AnyObject> = []
     
     private var heightCache: VLTableViewCache!
     
@@ -79,16 +79,16 @@ public class VLAbstractTableVC: UIViewController {
 
 extension VLAbstractTableVC: UITableViewDataSource {
     
-    public func cellConfigForIndexPath(indexPath: NSIndexPath) -> VLCellConfig {
+    public func dataObjectForIndexPath(indexPath: NSIndexPath) -> AnyObject {
         // Return a config based on whether the table is sectioned or not
         
-        let config: VLCellConfig
+        let dataobject: AnyObject
         if (self.isSectioned) {
-            config = self.sectionArray[indexPath.section][indexPath.row]
+            dataobject = self.sectionArray[indexPath.section][indexPath.row]
         } else {
-            config = self.cellArray[indexPath.row]
+            dataobject = self.cellArray[indexPath.row]
         }
-        return config
+        return dataobject
     }
     
     public func numberOfSectionsInTableView(tableView: UITableView) -> Int {

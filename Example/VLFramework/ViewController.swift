@@ -11,8 +11,6 @@
 
 import UIKit
 import VLFramework
-import AFNetworking
-import Bolts
 
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -79,6 +77,8 @@ class ViewController: VLAbstractTableVC {
         }
         
         self.view.backgroundColor = UIColor.fromHSBA(10, 90, 80, 100)
+        self.view.backgroundColor = UIColor.randomColor()
+        self.view.backgroundColor = UIColor(hex: 0xffcc33)
     }
     
     
@@ -93,7 +93,9 @@ class ViewController: VLAbstractTableVC {
     override func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         
         let cell: VLBaseCell = cell as! VLBaseCell
-        let config: VLCellConfig = self.cellArray[indexPath.row];
+        let dataObject: AnyObject = self.dataObjectForIndexPath(indexPath)
+        
+        let config: VLCellConfig = dataObject as! VLCellConfig
         
         cell.titleText = config.titleText
     }

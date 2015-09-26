@@ -21,16 +21,5 @@
     "VLFramework": [
       "Pod/Assets/*.png"
     ]
-  },
-  "dependencies": {
-    "AFNetworking": [
-
-    ],
-    "AFNetworkActivityLogger": [
-
-    ],
-    "Bolts": [
-
-    ]
   }
 }
